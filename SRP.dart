@@ -1,15 +1,12 @@
-abstract class User{
-  
-  bool login(String username, String password);
-  bool register(String username, String password, String email);
+abstract class User {
+  bool login(String userName, String password);
+  bool register(String userName, String password, String email);
 }
 
-abstract class Logger{
-  
+abstract class Logger {
   void logError(String error);
 }
 
-abstract class Email{
-  
+abstract class Email {
   bool sendEmail(String emailContent);
 }
